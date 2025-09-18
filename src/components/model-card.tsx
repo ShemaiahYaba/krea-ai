@@ -54,7 +54,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
   }
 
   return (
-    <Card className={cn("overflow-hidden rounded-3xl", className)}>
+    <Card className={cn("overflow-hidden rounded-3xl border-none shadow-none", className)}>
       <CardContent className="p-4 flex items-center gap-4">
         <div className="bg-muted rounded-lg p-2 flex items-center justify-center">
           <model.icon className="w-6 h-6 text-muted-foreground" />
