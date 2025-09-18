@@ -40,7 +40,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
     const getBackgroundClass = () => {
         switch (config.background) {
             case 'blue-gradient':
-                return 'bg-gradient-to-b from-cyan-200 to-white';
+                return 'bg-gradient-to-b from-cyan-400 to-cyan-200';
             case 'black-to-white-gradient':
                 return 'bg-gradient-to-br from-black to-gray-500 dark:from-white dark:to-gray-300';
             case 'dark-purple-gradient':
