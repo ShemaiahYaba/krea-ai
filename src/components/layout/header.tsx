@@ -27,9 +27,26 @@ export function AppHeader() {
             <Button asChild variant="ghost" className="text-lg font-bold w-10 h-10 p-0">
                 <Link href="/">K</Link>
             </Button>
-            <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300/50 to-blue-400/50 backdrop-blur-2xl">
-                <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
-            </Avatar>
+            <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" className="flex items-center gap-2 rounded-full h-9 w-auto px-2">
+                        <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300/50 to-blue-400/50 backdrop-blur-2xl">
+                            <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
+                        </Avatar>
+                        <span className="hidden md:block text-sm font-medium">Username</span>
+                        <ChevronDown className="h-4 w-4 hidden md:block" />
+                    </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                    <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>Profile</DropdownMenuItem>
+                    <DropdownMenuItem>Settings</DropdownMenuItem>
+                    <DropdownMenuItem>Support</DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>Log out</DropdownMenuItem>
+                </DropdownMenuContent>
+            </DropdownMenu>
         </div>
         
         <nav className="hidden md:flex">
@@ -77,26 +94,9 @@ export function AppHeader() {
                 <span className="sr-only">Notifications</span>
             </Button>
             <ThemeToggle />
-            <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="flex items-center gap-2 rounded-full h-9 w-auto px-2">
-                        <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300/50 to-blue-400/50 backdrop-blur-2xl">
-                            <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
-                        </Avatar>
-                        <span className="hidden md:block text-sm font-medium">Username</span>
-                        <ChevronDown className="h-4 w-4 hidden md:block" />
-                    </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                    <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem>Profile</DropdownMenuItem>
-                    <DropdownMenuItem>Settings</DropdownMenuItem>
-                    <DropdownMenuItem>Support</DropdownMenuItem>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem>Log out</DropdownMenuItem>
-                </DropdownMenuContent>
-            </DropdownMenu>
+            <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300/50 to-blue-400/50 backdrop-blur-2xl">
+                <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
+            </Avatar>
         </div>
     </header>
   );
