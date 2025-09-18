@@ -91,15 +91,15 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
   return (
     <Card className={cn("overflow-hidden rounded-3xl shadow-none border-none", className)}>
       <CardContent className="p-4 flex items-center gap-4">
-        <div className={cn("rounded-lg p-2 flex items-center justify-center", getBackgroundClass())}>
-            <IconComponent className={cn("w-6 h-6", config.iconClassName)} />
+        <div className={cn("rounded-lg p-3 flex items-center justify-center", getBackgroundClass())}>
+            <IconComponent className={cn("w-7 h-7", config.iconClassName)} />
         </div>
         <div className="flex-grow flex flex-col justify-center">
           <div className="flex items-center gap-2">
-            <CardTitle className="text-base font-semibold">{model.name}</CardTitle>
+            <CardTitle className="text-sm font-semibold">{model.name}</CardTitle>
             {model.isNew && <Badge variant="info">New</Badge>}
           </div>
-          <CardDescription className="text-sm">
+          <CardDescription className="text-xs">
             {model.description}
           </CardDescription>
         </div>
