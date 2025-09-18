@@ -25,7 +25,7 @@ const iconConfig: { [key: string]: { background: string, icon: React.ElementType
     Video: { background: "bg-orange-500", icon: Film, iconClassName: "text-white" },
     Realtime: { background: "blue-gradient", icon: PictureInPicture, iconClassName: "text-white" },
     Enhancer: { background: "black-to-white-gradient", icon: Sparkles, iconClassName: "text-white" },
-    Edit: { background: "bg-muted", icon: Pencil, iconClassName: "text-muted-foreground" },
+    Edit: { background: "edit-purple-gradient", icon: Pencil, iconClassName: "text-white" },
     "Video Lipsync": { background: "dark-purple-gradient", icon: Bot, iconClassName: "text-white" },
     "Motion Transfer": { background: "bg-black", icon: Move, iconClassName: "text-white" },
     Train: { background: "bg-black dark:bg-white", icon: BrainCircuit, iconClassName: "text-white dark:text-black" },
@@ -45,6 +45,8 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
                 return 'bg-gradient-to-br from-black to-gray-500 dark:from-white dark:to-gray-300';
             case 'dark-purple-gradient':
                 return 'bg-gradient-to-br from-purple-800 to-purple-900';
+            case 'edit-purple-gradient':
+                return 'bg-gradient-to-b from-purple-700 to-purple-500';
             case 'multicolored':
                  return 'bg-gradient-to-br from-red-400 via-green-400 to-blue-400';
             case 'dark-gray-gradient':
