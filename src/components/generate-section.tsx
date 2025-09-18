@@ -1,5 +1,4 @@
-import { models } from "@/lib/data";
-import { ModelCard } from "./model-card";
+import { ModelExplorer } from "./model-explorer";
 import { Button } from "./ui/button";
 
 export function GenerateSection() {
@@ -9,11 +8,7 @@ export function GenerateSection() {
         <h2 className="text-2xl font-bold tracking-tight">Generate</h2>
         <Button variant="outline">See All</Button>
       </div>
-      <div className="flex flex-col gap-4">
-        {models.map((model) => (
-          <ModelCard key={model.id} model={model} layout="row" />
-        ))}
-      </div>
+      <ModelExplorer />
     </div>
   );
 }

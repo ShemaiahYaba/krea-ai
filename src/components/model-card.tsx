@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 type ModelCardProps = {
   model: Model;
   className?: string;
-  layout?: "default" | "overlay" | "row";
+  layout?: "default" | "overlay";
 };
 
 export function ModelCard({ model, className, layout = "default" }: ModelCardProps) {
@@ -30,7 +30,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
           data-ai-hint={model.imageHint}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
-        <div className="relative flex flex-col h-full p-6 text-white">
+        <div className="relative flex flex-col h-full p-8 text-white">
             <div className="absolute top-4 left-4">
                 <Badge variant="secondary" className="bg-transparent text-white border-none font-light uppercase tracking-tighter">New image model</Badge>
             </div>
@@ -51,26 +51,6 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
         </div>
       </Card>
     );
-  }
-
-  if (layout === 'row') {
-    const Icon = model.icon;
-    return (
-      <Card className={cn("flex items-center p-4 rounded-3xl", className)}>
-        {Icon && (
-          <div className="mr-4">
-            <Icon className="h-6 w-6 text-muted-foreground" />
-          </div>
-        )}
-        <div className="flex-grow">
-          <CardTitle className="text-base font-semibold">{model.name}</CardTitle>
-          <CardDescription className="text-sm">{model.description}</CardDescription>
-        </div>
-        <Button variant="outline" size="sm">
-          Explore
-        </Button>
-      </Card>
-    )
   }
 
   return (
