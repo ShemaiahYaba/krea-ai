@@ -1,5 +1,6 @@
 import React from "react";
 import { AppHeader } from "@/components/layout/header";
+import { AppFooter } from "@/components/layout/footer";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   return (
@@ -8,6 +9,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <main className="flex-1 p-4 sm:px-8 sm:py-6">
             {children}
         </main>
+        <AppFooter />
     </div>
   );
 }
