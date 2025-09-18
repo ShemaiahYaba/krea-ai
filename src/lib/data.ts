@@ -27,7 +27,7 @@ import { DraftingCompassIcon, SolidMicIcon } from "@/components/custom-icons";
 export type NavItem = {
   label: string;
   href: string;
-  icon: LucideIcon;
+  icon: LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
 export const navItems: NavItem[] = [
@@ -36,7 +36,7 @@ export const navItems: NavItem[] = [
   { label: "Video", href: "#", icon: Film },
   { label: "Realtime", href: "#", icon: PictureInPicture },
   { label: "Enhancer", href: "#", icon: Wand2 },
-  { label: "Edit", href: "#", icon: DraftingCompassIcon as LucideIcon },
+  { label: "Edit", href: "#", icon: DraftingCompassIcon },
   { label: "Files", href: "#", icon: Folder },
 ];
 
@@ -83,8 +83,7 @@ export const models: Model[] = [
     description: "Upscale and refine your images with AI.",
     imageUrl: "https://picsum.photos/seed/103/600/400",
     imageHint: "dynamic motion",
-    icon: Sparkles,
-    isNew: true,
+    icon: Wand2,
   },
   {
     id: "5",
@@ -122,7 +121,60 @@ export const models: Model[] = [
 ];
 
 export const recommendations: Model[] = [
-    ...models.slice(0, 6),
+    {
+        id: "1",
+        name: "Image",
+        description: "Generate images from text.",
+        imageUrl: "https://picsum.photos/seed/106/800/600",
+        imageHint: "neural network",
+        icon: ImageIcon,
+        isNew: true,
+    },
+    {
+        id: "2",
+        name: "Video",
+        description: "Create videos from text or images.",
+        imageUrl: "https://picsum.photos/seed/101/600/400",
+        imageHint: "abstract tech",
+        icon: Film,
+        isNew: true,
+    },
+    {
+        id: "3",
+        name: "Realtime",
+        description: "See your creations come to life instantly.",
+        imageUrl: "https://picsum.photos/seed/102/600/400",
+        imageHint: "futuristic city",
+        icon: PictureInPicture,
+        isNew: true,
+    },
+    {
+        id: "4",
+        name: "Enhancer",
+        description: "Upscale and refine your images with AI.",
+        imageUrl: "https://picsum.photos/seed/103/600/400",
+        imageHint: "dynamic motion",
+        icon: Wand2,
+        isNew: true,
+    },
+    {
+        id: "5",
+        name: "Edit",
+        description: "Edit your images with text prompts.",
+        imageUrl: "https://picsum.photos/seed/105/600/400",
+        imageHint: "minimalist logo",
+        icon: DraftingCompassIcon,
+        isNew: true,
+    },
+    {
+        id: "6",
+        name: "Video Lipsync",
+        description: "Make your portraits talk.",
+        imageUrl: "https://picsum.photos/seed/104/600/400",
+        imageHint: "high resolution",
+        icon: SolidMicIcon,
+        isNew: true,
+    },
     {
         id: "9",
         name: "3D Texture",
@@ -130,6 +182,7 @@ export const recommendations: Model[] = [
         imageUrl: "https://picsum.photos/seed/111/600/400",
         imageHint: "fabric texture",
         icon: Trees,
+        isNew: true,
     },
     {
         id: "10",
@@ -138,6 +191,7 @@ export const recommendations: Model[] = [
         imageUrl: "https://picsum.photos/seed/112/600/400",
         imageHint: "detailed portrait",
         icon: User,
+        isNew: true,
     },
     {
         id: "11",
@@ -146,8 +200,9 @@ export const recommendations: Model[] = [
         imageUrl: "https://picsum.photos/seed/113/600/400",
         imageHint: "fantasy landscape",
         icon: Trees,
+        isNew: true,
     },
-].slice(0, 9);
+];
 
 export type GalleryItem = {
   id: string;
