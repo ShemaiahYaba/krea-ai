@@ -3,13 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bell, Image, Headphones, Home, Camera, Scissors, Type, LayoutGrid } from "lucide-react";
+import { Bell, Image, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { DraftingCompassIcon } from "../custom-icons";
 
 export function AppHeader() {
   const pathname = usePathname();
@@ -20,6 +19,10 @@ export function AppHeader() {
             <Button asChild variant="ghost" className="text-lg font-bold w-10 h-10 p-0">
                 <Link href="/">K</Link>
             </Button>
+            <Avatar className="h-8 w-8">
+                <AvatarImage src="https://picsum.photos/seed/107/100/100" alt="User" />
+                <AvatarFallback>U</AvatarFallback>
+            </Avatar>
         </div>
         
         <nav className="hidden md:flex">
@@ -67,10 +70,6 @@ export function AppHeader() {
                 <span className="sr-only">Notifications</span>
             </Button>
             <ThemeToggle />
-            <Avatar className="h-8 w-8">
-                <AvatarImage src="https://picsum.photos/seed/107/100/100" alt="User" />
-                <AvatarFallback>U</AvatarFallback>
-            </Avatar>
         </div>
     </header>
   );
