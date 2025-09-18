@@ -60,9 +60,9 @@ export function AppHeader() {
                             variant="ghost"
                             size="icon"
                             className={cn(
-                                "h-8 w-8 rounded-full bg-transparent transition-colors hover:bg-white hover:text-foreground",
+                                "h-8 w-8 rounded-full bg-transparent transition-colors hover:bg-white hover:text-black",
                                 (item.href === "/" ? pathname === item.href : pathname.startsWith(item.href))
-                                    ? "text-neutral-500 bg-white"
+                                    ? "text-black bg-white"
                                     : "text-muted-foreground"
                             )}
                         >
