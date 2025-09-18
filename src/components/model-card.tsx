@@ -54,7 +54,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
   }
 
   return (
-    <Card className={cn("overflow-hidden rounded-3xl border-none shadow-none", className)}>
+    <Card className={cn("overflow-hidden rounded-3xl shadow-none border-none", className)}>
       <CardContent className="p-4 flex items-center gap-4">
         <div className="bg-muted rounded-lg p-2 flex items-center justify-center">
           <model.icon className="w-6 h-6 text-muted-foreground" />
@@ -68,7 +68,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
             {model.description}
           </CardDescription>
         </div>
-        <Button variant="outline" size="sm">
+        <Button variant="ghost" size="sm" className="bg-muted hover:bg-background rounded-full">
           Open
         </Button>
       </CardContent>
