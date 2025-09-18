@@ -24,7 +24,7 @@ const iconConfig: { [key: string]: { background: string, icon: React.ElementType
     Image: { background: "dark-gray-gradient", icon: ImageIcon, iconClassName: "text-white" },
     Video: { background: "bg-orange-500", icon: Film, iconClassName: "text-white" },
     Realtime: { background: "blue-gradient", icon: PictureInPicture, iconClassName: "text-white" },
-    Enhancer: { background: "black-to-white-gradient", icon: Sparkles, iconClassName: "text-white" },
+    Enhancer: { background: "multicolored", icon: Wand2, iconClassName: "text-white" },
     Edit: { background: "edit-purple-gradient", icon: DraftingCompassIcon, iconClassName: "text-white/90" },
     "Video Lipsync": { background: "dark-purple-gradient", icon: Bot, iconClassName: "text-white" },
     "Motion Transfer": { background: "bg-black", icon: Move, iconClassName: "text-white" },
