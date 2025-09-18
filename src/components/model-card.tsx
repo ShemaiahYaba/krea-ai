@@ -30,8 +30,8 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
           data-ai-hint={model.imageHint}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
-        <div className="relative flex flex-col h-full p-12 text-white">
-            <div className="absolute top-4 left-4">
+        <div className="relative flex flex-col h-full p-8 text-white">
+            <div className="absolute top-4 left-8">
                 <Badge variant="secondary" className="bg-transparent text-white border-none font-light uppercase tracking-tighter">New image model</Badge>
             </div>
             <div className="flex-grow flex items-center justify-center">
@@ -39,11 +39,11 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
                   {model.name}
                 </CardTitle>
             </div>
-            <div className="absolute bottom-16 left-16">
+            <div className="absolute bottom-8 left-8">
                 <p className="text-sm font-medium">Create with</p>
                 <p className="text-xs text-white/80">{model.description}</p>
             </div>
-            <div className="absolute bottom-16 right-16">
+            <div className="absolute bottom-8 right-8">
                 <Button className="bg-white text-black hover:bg-neutral-200 hover:text-black border-none rounded-full">
                     Try "{model.name}"
                 </Button>
@@ -68,7 +68,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
             {model.description}
           </CardDescription>
         </div>
-        <Button variant="ghost" size="sm" className="bg-muted hover:bg-background hover:text-black rounded-full">
+        <Button variant="ghost" size="sm" className="bg-muted hover:bg-white hover:text-black rounded-full">
           Open
         </Button>
       </CardContent>
