@@ -62,7 +62,7 @@ export function AppHeader() {
                             className={cn(
                                 "h-8 w-8 rounded-full bg-transparent transition-colors hover:bg-white hover:text-foreground",
                                 (item.href === "/" ? pathname === item.href : pathname.startsWith(item.href))
-                                    ? "text-foreground bg-white"
+                                    ? "text-neutral-500 bg-white"
                                     : "text-muted-foreground"
                             )}
                         >
