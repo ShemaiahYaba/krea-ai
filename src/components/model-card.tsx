@@ -27,7 +27,7 @@ const iconConfig: { [key: string]: { background: string, icon: React.ElementType
     Enhancer: { background: "black-to-white-gradient", icon: Sparkles, iconClassName: "text-black dark:text-white" },
     Edit: { background: "bg-muted", icon: Pencil, iconClassName: "text-muted-foreground" },
     "Video Lipsync": { background: "dark-purple-gradient", icon: Bot, iconClassName: "text-white" },
-    "Motion Transfer": { background: "black-teal-gradient", icon: Move, iconClassName: "text-white" },
+    "Motion Transfer": { background: "bg-black", icon: Move, iconClassName: "text-white" },
     Train: { background: "bg-black dark:bg-white", icon: BrainCircuit, iconClassName: "text-white dark:text-black" },
     "multicolored": { background: "multicolored", icon: Wand2, iconClassName: "text-white" },
 };
