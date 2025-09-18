@@ -21,17 +21,17 @@ type ModelCardProps = {
 export function ModelCard({ model, className, layout = "default" }: ModelCardProps) {
   if (layout === "overlay") {
     return (
-      <Card className={cn("overflow-hidden relative group rounded-3xl", className)}>
+      <Card className={cn("overflow-hidden relative rounded-3xl", className)}>
         <Image
           src={model.imageUrl}
           alt={model.name}
           fill
-          className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+          className="object-cover transition-transform duration-300 ease-in-out"
           data-ai-hint={model.imageHint}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
         <div className="relative flex flex-col h-full p-8 text-white">
-            <div className="absolute top-4 left-8">
+            <div className="absolute top-8 left-8">
                 <Badge variant="secondary" className="bg-transparent text-white border-none font-light uppercase tracking-tighter">New image model</Badge>
             </div>
             <div className="flex-grow flex items-center justify-center">
