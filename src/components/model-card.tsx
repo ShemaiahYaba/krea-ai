@@ -30,15 +30,16 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
           data-ai-hint={model.imageHint}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
-        <div className="relative flex flex-col h-full p-6 text-white text-center">
+        <div className="relative flex flex-col h-full p-6 text-white">
             <div className="absolute top-4 left-4">
                 <Badge variant="secondary" className="bg-white/20 text-white border-none">New image model</Badge>
             </div>
-            <div className="flex-grow" />
-            <CardTitle className="text-4xl font-bold">
-              {model.name}
-            </CardTitle>
-            <div className="absolute bottom-4 right-4 mt-6">
+            <div className="flex-grow flex items-center justify-center">
+                <CardTitle className="text-4xl font-bold text-center">
+                  {model.name}
+                </CardTitle>
+            </div>
+            <div className="absolute bottom-4 right-4">
                 <Button variant="outline" size="lg" className="bg-white text-black hover:bg-neutral-200 border-none">
                     Try "{model.name}"
                 </Button>
