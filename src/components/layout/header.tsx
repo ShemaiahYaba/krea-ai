@@ -3,12 +3,20 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bell, Image, Headphones } from "lucide-react";
+import { Bell, Image, Headphones, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+  } from "@/components/ui/dropdown-menu";
 
 export function AppHeader() {
   const pathname = usePathname();
@@ -69,9 +77,26 @@ export function AppHeader() {
                 <span className="sr-only">Notifications</span>
             </Button>
             <ThemeToggle />
-            <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300/50 to-blue-400/50 backdrop-blur-2xl">
-                <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
-            </Avatar>
+            <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" className="flex items-center gap-2 rounded-full h-9 w-auto px-2">
+                        <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300/50 to-blue-400/50 backdrop-blur-2xl">
+                            <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
+                        </Avatar>
+                        <span className="hidden md:block text-sm font-medium">Username</span>
+                        <ChevronDown className="h-4 w-4 hidden md:block" />
+                    </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                    <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>Profile</DropdownMenuItem>
+                    <DropdownMenuItem>Settings</DropdownMenuItem>
+                    <DropdownMenuItem>Support</DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>Log out</DropdownMenuItem>
+                </DropdownMenuContent>
+            </DropdownMenu>
         </div>
     </header>
   );
