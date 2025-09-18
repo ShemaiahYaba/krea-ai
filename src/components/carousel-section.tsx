@@ -54,7 +54,7 @@ export function CarouselSection() {
       >
         <CarouselContent className="-ml-12">
           {recommendations.map((model) => (
-            <CarouselItem key={model.id} className="basis-4/5 md:basis-3/5 aspect-[16/9] pl-12">
+            <CarouselItem key={model.id} className="basis-4/5 md:basis-3/5 aspect-[16/7] pl-12">
               <ModelCard model={model} layout="overlay" className="h-full"/>
             </CarouselItem>
           ))}
@@ -73,10 +73,10 @@ export function CarouselSection() {
             ))}
         </div>
         <div className="absolute right-0 flex items-center gap-2">
-            <Button variant="outline" size="icon" className="h-8 w-8 rounded-full" onClick={scrollPrev}>
+            <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full bg-muted hover:bg-white hover:text-black" onClick={scrollPrev}>
                 <ChevronLeft className="h-4 w-4" />
             </Button>
-            <Button variant="outline" size="icon" className="h-8 w-8 rounded-full" onClick={scrollNext}>
+            <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full bg-muted hover:bg-white hover:text-black" onClick={scrollNext}>
                 <ChevronRight className="h-4 w-4" />
             </Button>
         </div>
