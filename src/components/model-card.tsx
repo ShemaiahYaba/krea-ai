@@ -30,26 +30,26 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
           data-ai-hint={model.imageHint}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
-        <div className="absolute inset-0 flex flex-col p-6 text-white">
-            <div>
-                <Badge variant="secondary" className="bg-transparent text-white border-none font-light uppercase tracking-tighter">New image model</Badge>
-            </div>
-            <div className="flex-grow flex items-center justify-center">
+        <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
+          <div>
+            <p className="font-light uppercase tracking-tighter text-sm">New image model</p>
+          </div>
+          <div className="flex-grow flex items-center justify-center">
                 <CardTitle className="text-4xl font-bold text-center">
                   {model.name}
                 </CardTitle>
             </div>
-            <div className="flex items-end justify-between">
-              <div>
-                  <p className="text-sm font-medium">Create with</p>
-                  <p className="text-xs text-white/80">{model.description}</p>
-              </div>
-              <div>
-                  <Button className="bg-white text-black hover:bg-neutral-200 hover:text-black border-none rounded-full">
-                      Try "{model.name}"
-                  </Button>
-              </div>
+          <div className="flex items-end justify-between">
+            <div>
+              <p className="text-sm font-medium">Create with</p>
+              <p className="text-xs text-white/80">{model.description}</p>
             </div>
+            <div>
+                <Button className="bg-white text-black hover:bg-neutral-200 hover:text-black border-none rounded-full">
+                    Try "{model.name}"
+                </Button>
+            </div>
+          </div>
         </div>
       </Card>
     );
