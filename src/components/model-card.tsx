@@ -21,7 +21,7 @@ type ModelCardProps = {
 };
 
 const iconConfig: { [key: string]: { background: string, icon: React.ElementType | LucideIcon, iconClassName?: string } } = {
-    Image: { background: "bg-gray-200 dark:bg-gray-700", icon: ImageIcon, iconClassName: "text-gray-500 dark:text-gray-400" },
+    Image: { background: "dark-gray-gradient", icon: ImageIcon, iconClassName: "text-white" },
     Video: { background: "bg-orange-500", icon: Film, iconClassName: "text-white" },
     Realtime: { background: "blue-gradient", icon: PictureInPicture, iconClassName: "text-white" },
     Enhancer: { background: "black-to-white-gradient", icon: Sparkles, iconClassName: "text-black dark:text-white" },
@@ -49,6 +49,8 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
                 return 'bg-gradient-to-br from-black to-teal-600';
             case 'multicolored':
                  return 'bg-gradient-to-br from-red-400 via-green-400 to-blue-400';
+            case 'dark-gray-gradient':
+                return 'bg-gradient-to-b from-gray-600 to-gray-400';
             default:
                 return config.background;
         }
