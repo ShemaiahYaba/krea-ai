@@ -54,13 +54,13 @@ export function CarouselSection() {
       >
         <CarouselContent className="-ml-8">
           {recommendations.map((model) => (
-            <CarouselItem key={model.id} className="basis-5/6 md:basis-2/3 aspect-video pl-12">
+            <CarouselItem key={model.id} className="basis-5/6 md:basis-4/5 aspect-video pl-12">
               <ModelCard model={model} layout="overlay" className="h-full"/>
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="relative mt-4 flex items-center justify-center">
+      <div className="relative mt-8 flex items-center justify-center">
         <div className="flex items-center gap-2">
             {Array.from({ length: count }).map((_, i) => (
                 <button
