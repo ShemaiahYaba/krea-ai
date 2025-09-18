@@ -44,7 +44,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
                 <p className="text-xs text-white/80">{model.description}</p>
             </div>
             <div className="absolute bottom-16 right-16">
-                <Button variant="outline" className="bg-white text-black hover:bg-neutral-200 border-none rounded-full">
+                <Button className="bg-white text-black hover:bg-neutral-200 hover:text-black border-none rounded-full">
                     Try "{model.name}"
                 </Button>
             </div>
