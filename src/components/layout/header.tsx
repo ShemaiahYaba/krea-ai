@@ -19,9 +19,8 @@ export function AppHeader() {
             <Button asChild variant="ghost" className="text-lg font-bold w-10 h-10 p-0">
                 <Link href="/">K</Link>
             </Button>
-            <Avatar className="h-8 w-8">
-                <AvatarImage src="https://picsum.photos/seed/107/100/100" alt="User" />
-                <AvatarFallback>U</AvatarFallback>
+            <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300 to-blue-400">
+                <AvatarFallback className="bg-transparent text-white">U</AvatarFallback>
             </Avatar>
         </div>
         
@@ -70,9 +69,8 @@ export function AppHeader() {
                 <span className="sr-only">Notifications</span>
             </Button>
             <ThemeToggle />
-            <Avatar className="h-8 w-8">
-                <AvatarImage src="https://picsum.photos/seed/107/100/100" alt="User" />
-                <AvatarFallback>U</AvatarFallback>
+            <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300 to-blue-400">
+                <AvatarFallback className="bg-transparent text-white">U</AvatarFallback>
             </Avatar>
         </div>
     </header>
