@@ -13,7 +13,7 @@ export function GallerySection() {
                     <Card
                         key={item.id}
                         className={cn(
-                            "group overflow-hidden relative rounded-xl",
+                            "group overflow-hidden relative rounded-2xl",
                             item.rowSpan && `md:row-span-${item.rowSpan}`,
                             item.colSpan && `md:col-span-${item.colSpan}`
                         )}
