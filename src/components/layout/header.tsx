@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bell, LayoutGrid, LifeBuoy } from "lucide-react";
+import { Bell, LayoutGrid, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -40,7 +40,7 @@ export function AppHeader() {
             </Button>
             <Button asChild className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black">
               <Link href="#">
-                <LifeBuoy className="h-4 w-4" />
+                <Headphones className="h-4 w-4" />
                 <span>Support</span>
               </Link>
             </Button>
