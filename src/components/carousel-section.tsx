@@ -60,7 +60,7 @@ export function CarouselSection() {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="relative mt-8 flex items-center justify-center">
+      <div className="relative mt-12 flex items-center justify-center">
         <div className="flex items-center gap-2">
             {Array.from({ length: count }).map((_, i) => (
                 <button
@@ -73,10 +73,10 @@ export function CarouselSection() {
             ))}
         </div>
         <div className="absolute right-0 flex items-center gap-2">
-            <Button variant="outline" size="icon" className="h-8 w-8" onClick={scrollPrev}>
+            <Button variant="outline" size="icon" className="h-8 w-8 rounded-full" onClick={scrollPrev}>
                 <ChevronLeft className="h-4 w-4" />
             </Button>
-            <Button variant="outline" size="icon" className="h-8 w-8" onClick={scrollNext}>
+            <Button variant="outline" size="icon" className="h-8 w-8 rounded-full" onClick={scrollNext}>
                 <ChevronRight className="h-4 w-4" />
             </Button>
         </div>
