@@ -2,7 +2,7 @@ import {
   Camera,
   Home,
   LayoutGrid,
-  Pencil,
+  Compass,
   Scissors,
   Type,
   LucideIcon,
@@ -32,7 +32,7 @@ export const navItems: NavItem[] = [
   { label: "Home", href: "/", icon: Home },
   { label: "Generate", href: "#", icon: Camera },
   { label: "Edit", href: "#", icon: Scissors },
-  { label: "Draw", href: "#", icon: Pencil },
+  { label: "Draw", href: "#", icon: Compass },
   { label: "Text", href: "#", icon: Type },
   { label: "Models", href: "#", icon: LayoutGrid },
 ];
@@ -89,7 +89,7 @@ export const models: Model[] = [
     description: "Edit your images with text prompts.",
     imageUrl: "https://picsum.photos/seed/105/600/400",
     imageHint: "minimalist logo",
-    icon: Pencil,
+    icon: Compass,
   },
   {
     id: "6",
