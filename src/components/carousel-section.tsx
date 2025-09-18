@@ -60,19 +60,19 @@ export function CarouselSection() {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="flex items-center justify-between mt-4">
+      <div className="relative mt-4 flex items-center justify-center">
         <div className="flex items-center gap-2">
             {Array.from({ length: count }).map((_, i) => (
                 <button
                     key={i}
                     onClick={() => scrollTo(i)}
-                    className={`h-2 w-2 rounded-full ${
-                    i === current -1 ? "bg-primary" : "bg-muted"
+                    className={`h-2 w-2 rounded-full transition-colors ${
+                    i === current -1 ? "bg-primary" : "bg-muted hover:bg-muted-foreground/50"
                     }`}
                 />
             ))}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="absolute right-0 flex items-center gap-2">
             <Button variant="outline" size="icon" className="h-8 w-8" onClick={scrollPrev}>
                 <ChevronLeft className="h-4 w-4" />
             </Button>
