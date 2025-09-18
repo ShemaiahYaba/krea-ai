@@ -32,7 +32,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
         <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
           <div>
-            <p className="font-light uppercase tracking-tighter text-sm">New image model</p>
+            <p className="font-extralight uppercase tracking-tighter text-xs">New image model</p>
           </div>
           <div className="flex-grow flex items-center justify-center">
                 <CardTitle className="text-4xl font-bold text-center">
