@@ -21,7 +21,7 @@ type ModelCardProps = {
 export function ModelCard({ model, className, layout = "default" }: ModelCardProps) {
   if (layout === "overlay") {
     return (
-      <Card className={cn("overflow-hidden relative group", className)}>
+      <Card className={cn("overflow-hidden relative group rounded-xl", className)}>
         <Image
           src={model.imageUrl}
           alt={model.name}
@@ -54,7 +54,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
   }
 
   return (
-    <Card className={cn("overflow-hidden flex flex-col", className)}>
+    <Card className={cn("overflow-hidden flex flex-col rounded-xl", className)}>
       <CardHeader className="p-0">
         <div className="relative aspect-video">
           <Image
