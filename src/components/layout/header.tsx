@@ -10,27 +10,11 @@ import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-const KreaLogo = () => (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
-        <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="url(#paint0_linear_1_2)"/>
-        <defs>
-            <linearGradient id="paint0_linear_1_2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#8E44AD"/>
-                <stop offset="1" stopColor="#9B59B6"/>
-            </linearGradient>
-        </defs>
-    </svg>
-)
-
 export function AppHeader() {
   const pathname = usePathname();
   
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:px-6">
-        <Link href="#" className="flex items-center gap-2 font-semibold">
-            <KreaLogo />
-            <span className="">Krea</span>
-        </Link>
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
             {navItems.map(item => (
                 <Link
