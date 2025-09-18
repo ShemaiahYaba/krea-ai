@@ -20,39 +20,39 @@ type ModelCardProps = {
   layout?: "default" | "overlay";
 };
 
-const iconComponents: { [key: string]: React.ElementType } = {
-  Image: ImageIcon,
-  Video: "orange",
-  Realtime: BlueGradientIcon,
-  Enhancer: BlackToWhiteGradientIcon,
-  Edit: "skip",
-  "Video Lipsync": DarkPurpleGradientIcon,
-  "Motion Transfer": BlackTealGradientIcon,
-  Train: "black",
-  "multicolored": MulticoloredIcon,
+const iconConfig: { [key: string]: { background: string, icon: React.ElementType, iconClassName?: string } } = {
+    Image: { background: "bg-gray-200 dark:bg-gray-700", icon: ImageIcon, iconClassName: "text-gray-500 dark:text-gray-400" },
+    Video: { background: "bg-orange-500", icon: "Film", iconClassName: "text-white" },
+    Realtime: { background: "blue-gradient", icon: "PictureInPicture", iconClassName: "text-white" },
+    Enhancer: { background: "black-to-white-gradient", icon: "Sparkles", iconClassName: "text-black dark:text-white" },
+    Edit: { background: "bg-muted", icon: "Pencil", iconClassName: "text-muted-foreground" },
+    "Video Lipsync": { background: "dark-purple-gradient", icon: "Bot", iconClassName: "text-white" },
+    "Motion Transfer": { background: "black-teal-gradient", icon: "Move", iconClassName: "text-white" },
+    Train: { background: "bg-black dark:bg-white", icon: "BrainCircuit", iconClassName: "text-white dark:text-black" },
+    "multicolored": { background: "multicolored", icon: "Wand2", iconClassName: "text-white" },
 };
 
-export function ModelCard({ model, className, layout = "default" }: ModelCardProps) {
-  const IconComponent = iconComponents[model.name] || model.icon;
-  
-  const getIcon = () => {
-    if (typeof IconComponent === 'string') {
-        if(IconComponent === 'orange'){
-            return <model.icon className="w-6 h-6 text-orange-500 fill-orange-500" />;
-        }
-        if(IconComponent === 'black'){
-            return <model.icon className="w-6 h-6 text-black fill-black dark:text-white dark:fill-white" />;
-        }
-        if(IconComponent === 'skip'){
-            return <model.icon className="w-6 h-6 text-muted-foreground" />;
-        }
-    }
-    if(model.name === 'Image'){
-        return <model.icon className="w-6 h-6 text-gray-400 fill-gray-400" />;
-    }
-    return <IconComponent className="w-6 h-6" />;
-  };
 
+export function ModelCard({ model, className, layout = "default" }: ModelCardProps) {
+    const config = iconConfig[model.name] || { background: 'bg-muted', icon: model.icon, iconClassName: 'text-muted-foreground' };
+    const IconComponent = config.icon;
+
+    const getBackgroundClass = () => {
+        switch (config.background) {
+            case 'blue-gradient':
+                return 'bg-gradient-to-br from-blue-400 to-blue-600';
+            case 'black-to-white-gradient':
+                return 'bg-gradient-to-br from-black to-gray-500 dark:from-white dark:to-gray-300';
+            case 'dark-purple-gradient':
+                return 'bg-gradient-to-br from-purple-800 to-purple-900';
+            case 'black-teal-gradient':
+                return 'bg-gradient-to-br from-black to-teal-600';
+            case 'multicolored':
+                 return 'bg-gradient-to-br from-red-400 via-green-400 to-blue-400';
+            default:
+                return config.background;
+        }
+    }
 
   if (layout === "overlay") {
     return (
@@ -91,8 +91,8 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
   return (
     <Card className={cn("overflow-hidden rounded-3xl shadow-none border-none", className)}>
       <CardContent className="p-4 flex items-center gap-4">
-        <div className="bg-muted rounded-lg p-2 flex items-center justify-center">
-            {getIcon()}
+        <div className={cn("rounded-lg p-2 flex items-center justify-center", getBackgroundClass())}>
+            <model.icon className={cn("w-6 h-6", config.iconClassName)} />
         </div>
         <div className="flex-grow">
           <div className="flex items-center gap-2">

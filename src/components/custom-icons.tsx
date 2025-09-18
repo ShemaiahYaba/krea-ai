@@ -8,7 +8,7 @@ export const BlueGradientIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props)
           <stop offset="100%" stopColor="#3B82F6" />
         </linearGradient>
       </defs>
-      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="url(#blueGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="url(#blueGradient)"/>
+      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="url(#blueGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 );
 
@@ -20,7 +20,7 @@ export const BlackToWhiteGradientIcon: React.FC<React.SVGProps<SVGSVGElement>> =
             <stop offset="100%" stopColor="white" />
             </linearGradient>
         </defs>
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="url(#bwGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="url(#bwGradient)" />
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="url(#bwGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
 
@@ -33,7 +33,7 @@ export const DarkPurpleGradientIcon: React.FC<React.SVGProps<SVGSVGElement>> = (
         </linearGradient>
       </defs>
       <rect width="24" height="24" rx="4" fill="url(#purpleGradient)" />
-      <path d="M7 12l5-5 5 5-5 5-5-5z" fill="white" fillOpacity="0.5"/>
+      <path d="M7 12l5-5 5 5-5 5-5-5z" stroke="white" strokeOpacity="0.8" strokeWidth="1.5"/>
     </svg>
   );
 
@@ -46,6 +46,7 @@ export const BlackTealGradientIcon: React.FC<React.SVGProps<SVGSVGElement>> = (p
         </linearGradient>
       </defs>
       <circle cx="12" cy="12" r="10" fill="url(#blackTealGradient)" />
+      <path d="M8 12h8M12 8v8" stroke="white" strokeOpacity="0.8" strokeWidth="1.5" />
     </svg>
 );
 
