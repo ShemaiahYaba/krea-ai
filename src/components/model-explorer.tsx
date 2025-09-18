@@ -9,17 +9,36 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 export function ModelExplorer() {
   const isMobile = useIsMobile();
   const [isLg, setIsLg] = React.useState(false);
+  const [isXl, setIsXl] = React.useState(false);
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   React.useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 1400px)");
-    const handleResize = () => setIsLg(mediaQuery.matches);
-    handleResize();
-    mediaQuery.addEventListener("change", handleResize);
-    return () => mediaQuery.removeEventListener("change", handleResize);
+    const lgMediaQuery = window.matchMedia("(min-width: 1024px) and (max-width: 1279px)");
+    const xlMediaQuery = window.matchMedia("(min-width: 1280px)");
+    
+    const handleLgResize = () => setIsLg(lgMediaQuery.matches);
+    const handleXlResize = () => setIsXl(xlMediaQuery.matches);
+
+    handleLgResize();
+    handleXlResize();
+
+    lgMediaQuery.addEventListener("change", handleLgResize);
+    xlMediaQuery.addEventListener("change", handleXlResize);
+
+    return () => {
+        lgMediaQuery.removeEventListener("change", handleLgResize);
+        xlMediaQuery.removeEventListener("change", handleXlResize);
+    }
   }, []);
 
-  const initialCount = isLg ? 8 : isMobile ? 2 : 4;
+  const getInitialCount = () => {
+    if (isXl) return 8;
+    if (isLg) return 3;
+    if (isMobile) return 2;
+    return 4;
+  }
+
+  const initialCount = getInitialCount();
   const itemsToShow = isExpanded || initialCount >= models.length ? models : models.slice(0, initialCount);
 
   return (
