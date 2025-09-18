@@ -18,7 +18,8 @@ import {
   Image as ImageIcon,
   Move,
   Bot,
-  BrainCircuit
+  BrainCircuit,
+  Mic,
 } from "lucide-react";
 import { DraftingCompassIcon } from "@/components/custom-icons";
 
@@ -97,7 +98,7 @@ export const models: Model[] = [
     description: "Make your portraits talk.",
     imageUrl: "https://picsum.photos/seed/104/600/400",
     imageHint: "high resolution",
-    icon: Bot,
+    icon: Mic,
   },
   {
     id: "7",
