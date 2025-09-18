@@ -30,7 +30,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
           data-ai-hint={model.imageHint}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
-        <div className="relative flex flex-col h-full p-8 text-white">
+        <div className="relative flex flex-col h-full p-12 text-white">
             <div className="absolute top-4 left-4">
                 <Badge variant="secondary" className="bg-transparent text-white border-none font-light uppercase tracking-tighter">New image model</Badge>
             </div>
@@ -39,11 +39,11 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
                   {model.name}
                 </CardTitle>
             </div>
-            <div className="absolute bottom-12 left-12">
+            <div className="absolute bottom-16 left-16">
                 <p className="text-sm font-medium">Create with</p>
                 <p className="text-xs text-white/80">{model.description}</p>
             </div>
-            <div className="absolute bottom-12 right-12">
+            <div className="absolute bottom-16 right-16">
                 <Button variant="outline" className="bg-white text-black hover:bg-neutral-200 border-none rounded-full">
                     Try "{model.name}"
                 </Button>
@@ -55,27 +55,24 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
 
   return (
     <Card className={cn("overflow-hidden flex flex-col rounded-3xl", className)}>
-      <CardHeader className="p-0">
-        <div className="relative aspect-video">
-          <Image
-            src={model.imageUrl}
-            alt={model.name}
-            fill
-            className="object-cover"
-            data-ai-hint={model.imageHint}
-          />
+      <CardContent className="p-4 flex-grow flex flex-col">
+        <div className="flex items-start justify-between">
+          <div className="flex items-start gap-4">
+            <div className="bg-muted rounded-lg p-2 flex items-center justify-center">
+              <model.icon className="w-6 h-6 text-muted-foreground" />
+            </div>
+            <div>
+              <CardTitle className="text-lg font-semibold">{model.name}</CardTitle>
+              <CardDescription className="text-sm mt-1">
+                {model.description}
+              </CardDescription>
+            </div>
+          </div>
         </div>
-      </CardHeader>
-      <CardContent className="p-4 flex-grow">
-        <CardTitle className="text-lg font-semibold">{model.name}</CardTitle>
-        <CardDescription className="text-sm mt-1">
-          {model.description}
-        </CardDescription>
       </CardContent>
-      <CardFooter className="p-4 pt-0 flex justify-between items-center">
-        <Badge variant="secondary">by {model.author}</Badge>
-        <Button variant="outline" size="sm">
-          Explore
+      <CardFooter className="p-4 pt-0">
+        <Button variant="outline" size="sm" className="ml-auto">
+          Open
         </Button>
       </CardFooter>
     </Card>
