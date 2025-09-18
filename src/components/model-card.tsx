@@ -68,7 +68,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
             {model.description}
           </CardDescription>
         </div>
-        <Button variant="ghost" size="sm" className="bg-muted hover:bg-background rounded-full">
+        <Button variant="ghost" size="sm" className="bg-muted hover:bg-background hover:text-black rounded-full">
           Open
         </Button>
       </CardContent>
