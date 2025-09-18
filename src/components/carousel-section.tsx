@@ -52,9 +52,9 @@ export function CarouselSection() {
         }}
         className="w-full"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-6">
           {recommendations.map((model) => (
-            <CarouselItem key={model.id} className="md:basis-1/2 aspect-video">
+            <CarouselItem key={model.id} className="md:basis-1/2 aspect-video pl-6">
               <ModelCard model={model} layout="overlay" className="h-full"/>
             </CarouselItem>
           ))}
