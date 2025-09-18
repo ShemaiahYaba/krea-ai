@@ -41,6 +41,7 @@ export type Model = {
   imageHint: string;
   isFeatured?: boolean;
   icon: LucideIcon;
+  isNew?: boolean;
 };
 
 export const models: Model[] = [
@@ -51,6 +52,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/106/800/600",
     imageHint: "neural network",
     icon: Wand2,
+    isNew: true,
   },
   {
     id: "2",
@@ -75,6 +77,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/103/600/400",
     imageHint: "dynamic motion",
     icon: Film,
+    isNew: true,
   },
   {
     id: "5",
@@ -107,6 +110,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/110/600/400",
     imageHint: "oil painting",
     icon: Palette,
+    isNew: true,
   },
 ];
 

@@ -30,7 +30,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
           data-ai-hint={model.imageHint}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
-        <div className="relative flex flex-col h-full p-6 text-white">
+        <div className="relative flex flex-col h-full p-12 text-white">
             <div className="absolute top-4 left-4">
                 <Badge variant="secondary" className="bg-transparent text-white border-none font-light uppercase tracking-tighter">New image model</Badge>
             </div>
@@ -60,7 +60,10 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
           <model.icon className="w-6 h-6 text-muted-foreground" />
         </div>
         <div className="flex-grow">
-          <CardTitle className="text-lg font-semibold">{model.name}</CardTitle>
+          <div className="flex items-center gap-2">
+            <CardTitle className="text-lg font-semibold">{model.name}</CardTitle>
+            {model.isNew && <Badge>New</Badge>}
+          </div>
           <CardDescription className="text-sm mt-1">
             {model.description}
           </CardDescription>
