@@ -20,7 +20,7 @@ export function AppHeader() {
                 <Link href="/">K</Link>
             </Button>
             <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300 to-blue-400">
-                <AvatarFallback className="bg-transparent text-white">U</AvatarFallback>
+                <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
             </Avatar>
         </div>
         
@@ -70,7 +70,7 @@ export function AppHeader() {
             </Button>
             <ThemeToggle />
             <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300 to-blue-400">
-                <AvatarFallback className="bg-transparent text-white">U</AvatarFallback>
+                <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
             </Avatar>
         </div>
     </header>
