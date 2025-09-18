@@ -80,13 +80,13 @@ export function AppHeader() {
             <Button asChild className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black font-normal">
               <Link href="/gallery">
                 <Image className="h-4 w-4" />
-                <span>Gallery</span>
+                <span className="tracking-tight">Gallery</span>
               </Link>
             </Button>
             <Button asChild className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black font-normal">
               <Link href="#">
                 <Headphones className="h-4 w-4" />
-                <span>Support</span>
+                <span className="tracking-tight">Support</span>
               </Link>
             </Button>
             <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black">
