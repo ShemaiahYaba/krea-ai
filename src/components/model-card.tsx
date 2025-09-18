@@ -96,10 +96,10 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
         </div>
         <div className="flex-grow flex flex-col justify-center">
           <div className="flex items-center gap-2">
-            <CardTitle className="text-lg font-semibold">{model.name}</CardTitle>
+            <CardTitle className="text-base font-semibold">{model.name}</CardTitle>
             {model.isNew && <Badge variant="info">New</Badge>}
           </div>
-          <CardDescription className="text-sm mt-1">
+          <CardDescription className="text-sm">
             {model.description}
           </CardDescription>
         </div>
