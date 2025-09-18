@@ -11,7 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { DraftingCompassIcon, SolidMicIcon } from "./custom-icons";
+import { DraftingCompassIcon, MulticoloredIcon, SolidMicIcon } from "./custom-icons";
 import { ImageIcon, Film, PictureInPicture, Sparkles, Compass, Move, Bot, BrainCircuit, LucideIcon, Wand2, Mic } from "lucide-react";
 
 type ModelCardProps = {
@@ -28,7 +28,7 @@ const iconConfig: { [key: string]: { background: string, icon: React.ElementType
     Edit: { background: "edit-purple-gradient", icon: DraftingCompassIcon, iconClassName: "text-white/90" },
     "Video Lipsync": { background: "lipsync-gradient", icon: SolidMicIcon, iconClassName: "text-white" },
     "Motion Transfer": { background: "bg-black", icon: Move, iconClassName: "text-white" },
-    Train: { background: "bg-black dark:bg-white", icon: BrainCircuit, iconClassName: "text-white dark:text-black" },
+    Train: { background: "bg-white", icon: MulticoloredIcon, iconClassName: "" },
     "multicolored": { background: "multicolored", icon: Wand2, iconClassName: "text-white" },
 };
 
