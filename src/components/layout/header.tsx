@@ -70,6 +70,10 @@ export function AppHeader() {
                 <span className="sr-only">Notifications</span>
             </Button>
             <ThemeToggle />
+            <Avatar className="h-8 w-8">
+                <AvatarImage src="https://picsum.photos/seed/107/100/100" alt="User" />
+                <AvatarFallback>U</AvatarFallback>
+            </Avatar>
         </div>
     </header>
   );
