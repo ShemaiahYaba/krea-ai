@@ -20,6 +20,7 @@ import {
   Bot,
   BrainCircuit,
   Mic,
+  Folder,
 } from "lucide-react";
 import { DraftingCompassIcon, SolidMicIcon } from "@/components/custom-icons";
 
@@ -31,11 +32,12 @@ export type NavItem = {
 
 export const navItems: NavItem[] = [
   { label: "Home", href: "/", icon: Home },
-  { label: "Generate", href: "#", icon: Camera },
-  { label: "Edit", href: "#", icon: Scissors },
-  { label: "Draw", href: "#", icon: DraftingCompassIcon as LucideIcon },
-  { label: "Text", href: "#", icon: Type },
-  { label: "Models", href: "#", icon: LayoutGrid },
+  { label: "Image", href: "/image", icon: ImageIcon },
+  { label: "Video", href: "/video", icon: Film },
+  { label: "Realtime", href: "/realtime", icon: PictureInPicture },
+  { label: "Enhancer", href: "/enhancer", icon: Sparkles },
+  { label: "Edit", href: "/edit", icon: DraftingCompassIcon as LucideIcon },
+  { label: "Files", href: "/files", icon: Folder },
 ];
 
 export type Model = {
