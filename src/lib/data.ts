@@ -32,12 +32,12 @@ export type NavItem = {
 
 export const navItems: NavItem[] = [
   { label: "Home", href: "/", icon: Home },
-  { label: "Image", href: "/image", icon: ImageIcon },
-  { label: "Video", href: "/video", icon: Film },
-  { label: "Realtime", href: "/realtime", icon: PictureInPicture },
-  { label: "Enhancer", href: "/enhancer", icon: Wand2 },
-  { label: "Edit", href: "/edit", icon: DraftingCompassIcon as LucideIcon },
-  { label: "Files", href: "/files", icon: Folder },
+  { label: "Image", href: "#", icon: ImageIcon },
+  { label: "Video", href: "#", icon: Film },
+  { label: "Realtime", href: "#", icon: PictureInPicture },
+  { label: "Enhancer", href: "#", icon: Wand2 },
+  { label: "Edit", href: "#", icon: DraftingCompassIcon as LucideIcon },
+  { label: "Files", href: "#", icon: Folder },
 ];
 
 export type Model = {
