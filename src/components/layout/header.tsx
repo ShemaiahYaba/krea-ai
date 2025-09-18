@@ -15,32 +15,41 @@ export function AppHeader() {
   const pathname = usePathname();
   
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:px-6">
-        <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-            {navItems.map(item => {
-                const Icon = item.icon;
-                return (
-                    <Button
-                        key={item.label}
-                        asChild
-                        variant="ghost"
-                        size="icon"
-                        className={cn(
-                            "h-8 w-8 rounded-full bg-transparent transition-colors hover:bg-muted hover:text-foreground",
-                            (item.href === "/" ? pathname === item.href : pathname.startsWith(item.href))
-                                ? "text-foreground bg-muted"
-                                : "text-muted-foreground"
-                        )}
-                    >
-                        <Link href={item.href} title={item.label}>
-                            <Icon className="h-4 w-4" />
-                            <span className="sr-only">{item.label}</span>
-                        </Link>
-                    </Button>
-                );
-            })}
+    <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:px-6">
+        <div className="flex items-center gap-2">
+            <Button asChild variant="ghost" className="text-lg font-bold w-10 h-10 p-0">
+                <Link href="/">K</Link>
+            </Button>
+        </div>
+        
+        <nav className="hidden md:flex">
+            <div className="flex items-center gap-2 rounded-full bg-muted p-1">
+                {navItems.map(item => {
+                    const Icon = item.icon;
+                    return (
+                        <Button
+                            key={item.label}
+                            asChild
+                            variant="ghost"
+                            size="icon"
+                            className={cn(
+                                "h-8 w-8 rounded-full bg-transparent transition-colors hover:bg-white hover:text-foreground",
+                                (item.href === "/" ? pathname === item.href : pathname.startsWith(item.href))
+                                    ? "text-foreground bg-white"
+                                    : "text-muted-foreground"
+                            )}
+                        >
+                            <Link href={item.href} title={item.label}>
+                                <Icon className="h-4 w-4" />
+                                <span className="sr-only">{item.label}</span>
+                            </Link>
+                        </Button>
+                    );
+                })}
+            </div>
         </nav>
-        <div className="flex w-full items-center gap-4 md:ml-auto md:justify-end md:gap-2 lg:gap-4">
+
+        <div className="flex items-center gap-4 md:gap-2 lg:gap-4">
             <Button asChild className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black">
               <Link href="/gallery">
                 <Image className="h-4 w-4" />
