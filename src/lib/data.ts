@@ -10,7 +10,7 @@ import {
   PictureInPicture,
   Film,
   Sparkles,
-  Vector,
+  PenTool,
   Palette,
   Scan,
   Database,
@@ -109,7 +109,7 @@ export const models: Model[] = [
     author: "Community",
     imageUrl: "https://picsum.photos/seed/109/600/400",
     imageHint: "geometric patterns",
-    icon: Vector,
+    icon: PenTool,
   },
   {
     id: "8",
