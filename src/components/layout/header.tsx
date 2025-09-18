@@ -32,7 +32,7 @@ export function AppHeader() {
             ))}
         </nav>
         <div className="flex w-full items-center gap-4 md:ml-auto md:justify-end md:gap-2 lg:gap-4">
-            <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full bg-muted text-black hover:bg-white hover:text-black">
+            <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black">
                 <Bell className="h-4 w-4" fill="currentColor" />
                 <span className="sr-only">Notifications</span>
             </Button>
