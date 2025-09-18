@@ -26,6 +26,5 @@ This application is crafted using a modern, robust, and scalable technology stac
 *   **Frontend:** Next.js & React
 *   **UI Components:** shadcn/ui & Radix UI
 *   **Styling:** Tailwind CSS
-*   **Generative AI:** Google's Genkit
 
 Thank you for visiting. We invite you to explore, create, and redefine the boundaries of your own imagination.
