@@ -21,7 +21,7 @@ import {
   BrainCircuit,
   Mic,
 } from "lucide-react";
-import { DraftingCompassIcon } from "@/components/custom-icons";
+import { DraftingCompassIcon, SolidMicIcon } from "@/components/custom-icons";
 
 export type NavItem = {
   label: string;
@@ -98,7 +98,7 @@ export const models: Model[] = [
     description: "Make your portraits talk.",
     imageUrl: "https://picsum.photos/seed/104/600/400",
     imageHint: "high resolution",
-    icon: Mic,
+    icon: SolidMicIcon,
   },
   {
     id: "7",
