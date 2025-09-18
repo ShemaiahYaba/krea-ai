@@ -29,11 +29,11 @@ export function AppHeader() {
             </Button>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="flex items-center gap-2 rounded-full h-9 w-auto px-2">
+                    <Button variant="ghost" className="flex items-center gap-2 rounded-full h-9 w-auto px-2 bg-white hover:bg-white font-normal text-black">
                         <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300/50 to-blue-400/50 backdrop-blur-2xl">
                             <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
                         </Avatar>
-                        <span className="hidden md:block text-sm font-medium">Username</span>
+                        <span className="hidden md:block text-sm">Username</span>
                         <ChevronDown className="h-4 w-4 hidden md:block" />
                     </Button>
                 </DropdownMenuTrigger>
