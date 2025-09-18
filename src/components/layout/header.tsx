@@ -76,7 +76,7 @@ export function AppHeader() {
             </div>
         </nav>
 
-        <div className="flex items-center gap-4 md:gap-2 lg:gap-4">
+        <div className="flex items-center gap-2">
             <Button asChild className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black font-normal">
               <Link href="/gallery">
                 <Image className="h-4 w-4" />
