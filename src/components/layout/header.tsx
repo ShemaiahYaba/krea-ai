@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bell, LayoutGrid, Headphones } from "lucide-react";
+import { Bell, Image, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -33,8 +33,8 @@ export function AppHeader() {
         </nav>
         <div className="flex w-full items-center gap-4 md:ml-auto md:justify-end md:gap-2 lg:gap-4">
             <Button asChild className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black">
-              <Link href="#">
-                <LayoutGrid className="h-4 w-4" />
+              <Link href="/gallery">
+                <Image className="h-4 w-4" />
                 <span>Gallery</span>
               </Link>
             </Button>
