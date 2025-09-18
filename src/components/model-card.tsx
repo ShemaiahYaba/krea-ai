@@ -46,7 +46,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
             case 'dark-purple-gradient':
                 return 'bg-gradient-to-br from-purple-800 to-purple-900';
             case 'edit-purple-gradient':
-                return 'bg-gradient-to-b from-purple-700 to-purple-500';
+                return 'bg-gradient-to-b from-purple-900 to-purple-700';
             case 'multicolored':
                  return 'bg-gradient-to-br from-red-400 via-green-400 to-blue-400';
             case 'dark-gray-gradient':
