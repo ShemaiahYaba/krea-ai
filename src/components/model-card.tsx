@@ -31,25 +31,23 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
         <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
-          <div>
-            <p className="font-extralight uppercase tracking-tighter text-xs">New image model</p>
-          </div>
-          <div className="flex-grow flex items-center justify-center">
-                <CardTitle className="text-4xl font-bold text-center">
-                  {model.name}
-                </CardTitle>
+            <p className="font-extralight uppercase tracking-tighter text-xs">{model.isNew ? "New image model" : ""}</p>
+            <div className="flex-grow flex items-center justify-center">
+                  <CardTitle className="text-4xl font-bold text-center">
+                    {model.name}
+                  </CardTitle>
+              </div>
+            <div className="flex items-end justify-between">
+              <div>
+                <p className="text-sm font-medium">Create with</p>
+                <p className="text-xs text-white/80">{model.description}</p>
+              </div>
+              <div>
+                  <Button className="bg-white text-black hover:bg-neutral-200 hover:text-black border-none rounded-full">
+                      Try "{model.name}"
+                  </Button>
+              </div>
             </div>
-          <div className="flex items-end justify-between">
-            <div>
-              <p className="text-sm font-medium">Create with</p>
-              <p className="text-xs text-white/80">{model.description}</p>
-            </div>
-            <div>
-                <Button className="bg-white text-black hover:bg-neutral-200 hover:text-black border-none rounded-full">
-                    Try "{model.name}"
-                </Button>
-            </div>
-          </div>
         </div>
       </Card>
     );
@@ -64,7 +62,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
         <div className="flex-grow">
           <div className="flex items-center gap-2">
             <CardTitle className="text-lg font-semibold">{model.name}</CardTitle>
-            {model.isNew && <Badge>New</Badge>}
+            {model.isNew && <Badge variant="info">New</Badge>}
           </div>
           <CardDescription className="text-sm mt-1">
             {model.description}
