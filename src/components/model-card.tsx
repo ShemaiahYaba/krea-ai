@@ -11,7 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { MulticoloredIcon, BlackToWhiteGradientIcon, BlueGradientIcon, DarkPurpleGradientIcon, BlackTealGradientIcon } from "./custom-icons";
+import { MulticoloredIcon, BlackToWhiteGradientIcon, BlueGradientIcon, DarkPurpleGradientIcon, BlackTealGradientIcon, DraftingCompassIcon } from "./custom-icons";
 import { ImageIcon, Film, PictureInPicture, Sparkles, Compass, Move, Bot, BrainCircuit, LucideIcon, Wand2 } from "lucide-react";
 
 type ModelCardProps = {
@@ -25,7 +25,7 @@ const iconConfig: { [key: string]: { background: string, icon: React.ElementType
     Video: { background: "bg-orange-500", icon: Film, iconClassName: "text-white" },
     Realtime: { background: "blue-gradient", icon: PictureInPicture, iconClassName: "text-white" },
     Enhancer: { background: "black-to-white-gradient", icon: Sparkles, iconClassName: "text-white" },
-    Edit: { background: "edit-purple-gradient", icon: Compass, iconClassName: "text-white/90" },
+    Edit: { background: "edit-purple-gradient", icon: DraftingCompassIcon, iconClassName: "text-white/90" },
     "Video Lipsync": { background: "dark-purple-gradient", icon: Bot, iconClassName: "text-white" },
     "Motion Transfer": { background: "bg-black", icon: Move, iconClassName: "text-white" },
     Train: { background: "bg-black dark:bg-white", icon: BrainCircuit, iconClassName: "text-white dark:text-black" },

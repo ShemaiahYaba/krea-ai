@@ -57,3 +57,15 @@ export const MulticoloredIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props)
         <path d="M2 12l10-5 10 5-10 5-10-5z" fill="#34D399"/>
     </svg>
 );
+
+export const DraftingCompassIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <g stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 3L5 21" />
+            <path d="M12 3L19 21" />
+            <path d="M12 14a2 2 0 100-4 2 2 0 000 4z" />
+            <path d="M5 21a2 2 0 100-4 2 2 0 000 4z" />
+            <path d="M19 21a2 2 0 100-4 2 2 0 000 4z" />
+        </g>
+    </svg>
+);

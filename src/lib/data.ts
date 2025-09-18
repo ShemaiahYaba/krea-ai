@@ -2,7 +2,6 @@ import {
   Camera,
   Home,
   LayoutGrid,
-  Compass,
   Scissors,
   Type,
   LucideIcon,
@@ -21,6 +20,7 @@ import {
   Bot,
   BrainCircuit
 } from "lucide-react";
+import { DraftingCompassIcon } from "@/components/custom-icons";
 
 export type NavItem = {
   label: string;
@@ -32,7 +32,7 @@ export const navItems: NavItem[] = [
   { label: "Home", href: "/", icon: Home },
   { label: "Generate", href: "#", icon: Camera },
   { label: "Edit", href: "#", icon: Scissors },
-  { label: "Draw", href: "#", icon: Compass },
+  { label: "Draw", href: "#", icon: DraftingCompassIcon as LucideIcon },
   { label: "Text", href: "#", icon: Type },
   { label: "Models", href: "#", icon: LayoutGrid },
 ];
@@ -44,7 +44,7 @@ export type Model = {
   imageUrl: string;
   imageHint: string;
   isFeatured?: boolean;
-  icon: LucideIcon;
+  icon: LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
   isNew?: boolean;
 };
 
@@ -89,7 +89,7 @@ export const models: Model[] = [
     description: "Edit your images with text prompts.",
     imageUrl: "https://picsum.photos/seed/105/600/400",
     imageHint: "minimalist logo",
-    icon: Compass,
+    icon: DraftingCompassIcon,
   },
   {
     id: "6",
