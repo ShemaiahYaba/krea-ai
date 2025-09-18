@@ -11,6 +11,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { MulticoloredIcon, BlackToWhiteGradientIcon, BlueGradientIcon, DarkPurpleGradientIcon, BlackTealGradientIcon } from "./custom-icons";
+import { ImageIcon } from "lucide-react";
 
 type ModelCardProps = {
   model: Model;
@@ -18,7 +20,40 @@ type ModelCardProps = {
   layout?: "default" | "overlay";
 };
 
+const iconComponents: { [key: string]: React.ElementType } = {
+  Image: ImageIcon,
+  Video: "orange",
+  Realtime: BlueGradientIcon,
+  Enhancer: BlackToWhiteGradientIcon,
+  Edit: "skip",
+  "Video Lipsync": DarkPurpleGradientIcon,
+  "Motion Transfer": BlackTealGradientIcon,
+  Train: "black",
+  "multicolored": MulticoloredIcon,
+};
+
 export function ModelCard({ model, className, layout = "default" }: ModelCardProps) {
+  const IconComponent = iconComponents[model.name] || model.icon;
+  
+  const getIcon = () => {
+    if (typeof IconComponent === 'string') {
+        if(IconComponent === 'orange'){
+            return <model.icon className="w-6 h-6 text-orange-500 fill-orange-500" />;
+        }
+        if(IconComponent === 'black'){
+            return <model.icon className="w-6 h-6 text-black fill-black dark:text-white dark:fill-white" />;
+        }
+        if(IconComponent === 'skip'){
+            return <model.icon className="w-6 h-6 text-muted-foreground" />;
+        }
+    }
+    if(model.name === 'Image'){
+        return <model.icon className="w-6 h-6 text-gray-400 fill-gray-400" />;
+    }
+    return <IconComponent className="w-6 h-6" />;
+  };
+
+
   if (layout === "overlay") {
     return (
       <Card className={cn("overflow-hidden relative rounded-3xl", className)}>
@@ -57,7 +92,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
     <Card className={cn("overflow-hidden rounded-3xl shadow-none border-none", className)}>
       <CardContent className="p-4 flex items-center gap-4">
         <div className="bg-muted rounded-lg p-2 flex items-center justify-center">
-          <model.icon className="w-6 h-6 text-muted-foreground" />
+            {getIcon()}
         </div>
         <div className="flex-grow">
           <div className="flex items-center gap-2">
