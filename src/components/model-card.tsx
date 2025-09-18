@@ -40,7 +40,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
                 </CardTitle>
             </div>
             <div className="absolute bottom-4 right-4">
-                <Button variant="outline" size="lg" className="bg-white text-black hover:bg-neutral-200 border-none">
+                <Button variant="outline" className="bg-white text-black hover:bg-neutral-200 border-none">
                     Try "{model.name}"
                 </Button>
             </div>
