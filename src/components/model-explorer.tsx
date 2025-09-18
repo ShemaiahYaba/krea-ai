@@ -9,7 +9,6 @@ export function ModelExplorer() {
           <ModelCard
             key={model.id}
             model={model}
-            className={model.isFeatured ? "md:col-span-2" : ""}
           />
         ))}
       </div>
