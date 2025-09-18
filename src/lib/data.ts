@@ -35,7 +35,7 @@ export const navItems: NavItem[] = [
   { label: "Image", href: "/image", icon: ImageIcon },
   { label: "Video", href: "/video", icon: Film },
   { label: "Realtime", href: "/realtime", icon: PictureInPicture },
-  { label: "Enhancer", href: "/enhancer", icon: Sparkles },
+  { label: "Enhancer", href: "/enhancer", icon: Wand2 },
   { label: "Edit", href: "/edit", icon: DraftingCompassIcon as LucideIcon },
   { label: "Files", href: "/files", icon: Folder },
 ];
