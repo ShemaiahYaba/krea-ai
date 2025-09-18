@@ -29,7 +29,7 @@ export function AppHeader() {
             </Button>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="flex items-center gap-2 rounded-full h-9 w-auto px-2 bg-white hover:bg-white font-normal text-black hover:text-black">
+                    <Button variant="ghost" className="flex items-center gap-2 rounded-full h-9 w-auto px-2 bg-white dark:bg-muted dark:hover:bg-muted font-normal text-black dark:text-foreground hover:bg-white hover:text-black">
                         <Avatar className="h-8 w-8 bg-gradient-to-b from-pink-300/50 to-blue-400/50 backdrop-blur-2xl">
                             <AvatarFallback className="bg-transparent text-white"></AvatarFallback>
                         </Avatar>
