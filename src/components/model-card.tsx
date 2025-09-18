@@ -32,7 +32,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/50 to-black/90" />
         <div className="relative flex flex-col h-full p-6 text-white">
             <div className="absolute top-4 left-4">
-                <Badge variant="secondary" className="bg-transparent text-white border-none font-light">New image model</Badge>
+                <Badge variant="secondary" className="bg-transparent text-white border-none font-light uppercase tracking-tighter">New image model</Badge>
             </div>
             <div className="flex-grow flex items-center justify-center">
                 <CardTitle className="text-4xl font-bold text-center">
