@@ -22,7 +22,7 @@ export function AppHeader() {
   const pathname = usePathname();
   
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:px-6">
+    <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:px-6">
         <div className="flex items-center gap-2">
             <Button asChild variant="ghost" className="text-lg font-bold w-10 h-10 p-0">
                 <Link href="/">K</Link>
@@ -86,7 +86,7 @@ export function AppHeader() {
             <Button asChild className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black font-normal">
               <Link href="#">
                 <Headphones className="h-4 w-4" />
-                <span className="tracking-tight">Support</span>
+                <span className="font-normal tracking-tight">Support</span>
               </Link>
             </Button>
             <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black">
