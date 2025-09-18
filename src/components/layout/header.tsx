@@ -50,7 +50,7 @@ export function AppHeader() {
         </div>
         
         <nav className="hidden md:flex">
-            <div className="flex items-center gap-2 rounded-full bg-muted p-1">
+            <div className="flex items-center gap-2 rounded-xl bg-muted p-1">
                 {navItems.map(item => {
                     const Icon = item.icon;
                     return (
