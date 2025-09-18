@@ -1,11 +1,13 @@
-import { ModelExplorer } from "@/components/model-explorer";
-import { Recommendations } from "@/components/recommendations";
+import { CarouselSection } from "@/components/carousel-section";
+import { GenerateSection } from "@/components/generate-section";
+import { GallerySection } from "@/components/gallery-section";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8">
-      <Recommendations />
-      <ModelExplorer />
+    <div className="flex flex-col gap-12">
+      <CarouselSection />
+      <GenerateSection />
+      <GallerySection />
     </div>
   );
 }

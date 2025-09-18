@@ -48,6 +48,12 @@
       "description": "Placeholder for generated image",
       "imageUrl": "https://picsum.photos/seed/108/512/512",
       "imageHint": "surreal landscape"
+    },
+    {
+      "id": "bento-placeholder",
+      "description": "Placeholder for bento grid",
+      "imageUrl": "https://picsum.photos/seed/bento1/800/600",
+      "imageHint": "abstract composition"
     }
   ]
 }

@@ -84,6 +84,66 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/104/600/400",
     imageHint: "high resolution",
   },
+  {
+    id: "7",
+    name: "Vector Magic",
+    description: "Generate high-quality vector graphics.",
+    author: "Community",
+    imageUrl: "https://picsum.photos/seed/109/600/400",
+    imageHint: "geometric patterns",
+  },
+  {
+    id: "8",
+    name: "AI Painter",
+    description: "Transform photos into artistic paintings.",
+    author: "Krea AI",
+    imageUrl: "https://picsum.photos/seed/110/600/400",
+    imageHint: "oil painting",
+  },
 ];
 
-export const recommendations = models.slice(0, 3);
+export const recommendations: Model[] = [
+    ...models.slice(0, 6),
+    {
+        id: "9",
+        name: "3D Texture",
+        description: "Generate textures for 3D models.",
+        author: "Community",
+        imageUrl: "https://picsum.photos/seed/111/600/400",
+        imageHint: "fabric texture"
+    },
+    {
+        id: "10",
+        name: "Portrait Plus",
+        description: "Create lifelike portraits from descriptions.",
+        author: "Krea AI",
+        imageUrl: "https://picsum.photos/seed/112/600/400",
+        imageHint: "detailed portrait"
+    },
+    {
+        id: "11",
+        name: "Fantasy World",
+        description: "Build breathtaking fantasy landscapes.",
+        author: "Community",
+        imageUrl: "https://picsum.photos/seed/113/600/400",
+        imageHint: "fantasy landscape"
+    },
+].slice(0, 9);
+
+export type GalleryItem = {
+  id: string;
+  imageUrl: string;
+  imageHint: string;
+  rowSpan?: number;
+  colSpan?: number;
+};
+
+export const galleryItems: GalleryItem[] = [
+  { id: "g1", imageUrl: "https://picsum.photos/seed/g1/800/600", imageHint: "abstract nature", colSpan: 2, rowSpan: 2 },
+  { id: "g2", imageUrl: "https://picsum.photos/seed/g2/600/800", imageHint: "cyberpunk alley", rowSpan: 2 },
+  { id: "g3", imageUrl: "https://picsum.photos/seed/g3/600/400", imageHint: "serene lake" },
+  { id: "g4", imageUrl: "https://picsum.photos/seed/g4/600/400", imageHint: "mountain peak" },
+  { id: "g5", imageUrl: "https://picsum.photos/seed/g5/800/600", imageHint: "glowing forest", colSpan: 2, rowSpan: 2 },
+  { id: "g6", imageUrl: "https://picsum.photos/seed/g6/600/400", imageHint: "retro diner" },
+  { id: "g7", imageUrl: "https://picsum.photos/seed/g7/600/400", imageHint: "space station" },
+];
