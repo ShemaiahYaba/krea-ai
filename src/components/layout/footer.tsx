@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Shield, Tag } from "lucide-react";
+import { Library, CreditCard } from "lucide-react";
 
 export function AppFooter() {
   return (
@@ -12,7 +12,7 @@ export function AppFooter() {
           className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black font-normal"
         >
           <Link href="#">
-            <Shield className="h-4 w-4" />
+            <Library className="h-4 w-4" />
             <span className="font-normal tracking-tight">Legal</span>
           </Link>
         </Button>
@@ -22,7 +22,7 @@ export function AppFooter() {
           className="h-8 rounded-full bg-muted text-foreground hover:bg-white hover:text-black font-normal"
         >
           <Link href="#">
-            <Tag className="h-4 w-4" />
+            <CreditCard className="h-4 w-4" />
             <span className="font-normal tracking-tight">Pricing</span>
           </Link>
         </Button>
