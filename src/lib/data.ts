@@ -6,6 +6,17 @@ import {
   Scissors,
   Type,
   LucideIcon,
+  Wand2,
+  PictureInPicture,
+  Film,
+  Sparkles,
+  Vector,
+  Palette,
+  Scan,
+  Database,
+  User,
+  Mountain,
+  Trees,
 } from "lucide-react";
 
 export type NavItem = {
@@ -31,6 +42,7 @@ export type Model = {
   imageUrl: string;
   imageHint: string;
   isFeatured?: boolean;
+  icon?: LucideIcon;
 };
 
 export const models: Model[] = [
@@ -42,6 +54,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/106/800/600",
     imageHint: "neural network",
     isFeatured: true,
+    icon: Wand2,
   },
   {
     id: "2",
@@ -50,6 +63,7 @@ export const models: Model[] = [
     author: "Community",
     imageUrl: "https://picsum.photos/seed/101/600/400",
     imageHint: "abstract tech",
+    icon: PictureInPicture,
   },
   {
     id: "3",
@@ -58,6 +72,7 @@ export const models: Model[] = [
     author: "Krea AI",
     imageUrl: "https://picsum.photos/seed/102/600/400",
     imageHint: "futuristic city",
+    icon: Sparkles,
   },
   {
     id: "4",
@@ -66,6 +81,7 @@ export const models: Model[] = [
     author: "Community",
     imageUrl: "https://picsum.photos/seed/103/600/400",
     imageHint: "dynamic motion",
+    icon: Film,
   },
   {
     id: "5",
@@ -75,6 +91,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/105/600/400",
     imageHint: "minimalist logo",
     isFeatured: true,
+    icon: Scan,
   },
   {
     id: "6",
@@ -83,6 +100,7 @@ export const models: Model[] = [
     author: "Krea AI",
     imageUrl: "https://picsum.photos/seed/104/600/400",
     imageHint: "high resolution",
+    icon: Scan,
   },
   {
     id: "7",
@@ -91,6 +109,7 @@ export const models: Model[] = [
     author: "Community",
     imageUrl: "https://picsum.photos/seed/109/600/400",
     imageHint: "geometric patterns",
+    icon: Vector,
   },
   {
     id: "8",
@@ -99,6 +118,7 @@ export const models: Model[] = [
     author: "Krea AI",
     imageUrl: "https://picsum.photos/seed/110/600/400",
     imageHint: "oil painting",
+    icon: Palette,
   },
 ];
 
@@ -110,7 +130,8 @@ export const recommendations: Model[] = [
         description: "Generate textures for 3D models.",
         author: "Community",
         imageUrl: "https://picsum.photos/seed/111/600/400",
-        imageHint: "fabric texture"
+        imageHint: "fabric texture",
+        icon: Database,
     },
     {
         id: "10",
@@ -118,7 +139,8 @@ export const recommendations: Model[] = [
         description: "Create lifelike portraits from descriptions.",
         author: "Krea AI",
         imageUrl: "https://picsum.photos/seed/112/600/400",
-        imageHint: "detailed portrait"
+        imageHint: "detailed portrait",
+        icon: User,
     },
     {
         id: "11",
@@ -126,7 +148,8 @@ export const recommendations: Model[] = [
         description: "Build breathtaking fantasy landscapes.",
         author: "Community",
         imageUrl: "https://picsum.photos/seed/113/600/400",
-        imageHint: "fantasy landscape"
+        imageHint: "fantasy landscape",
+        icon: Trees,
     },
 ].slice(0, 9);
 

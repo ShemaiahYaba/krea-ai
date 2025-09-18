@@ -9,9 +9,9 @@ export function GenerateSection() {
         <h2 className="text-2xl font-bold tracking-tight">Generate</h2>
         <Button variant="outline">See All</Button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="flex flex-col gap-4">
         {models.map((model) => (
-          <ModelCard key={model.id} model={model} />
+          <ModelCard key={model.id} model={model} layout="row" />
         ))}
       </div>
     </div>
