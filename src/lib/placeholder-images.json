@@ -1,3 +1,53 @@
+
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "model-realtime",
+      "description": "Realtime generation model",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "model-enhance",
+      "description": "Image enhancement model",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "futuristic city"
+    },
+    {
+      "id": "model-animate",
+      "description": "Animation and motion model",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "dynamic motion"
+    },
+    {
+      "id": "model-upscale",
+      "description": "Image upscaling model",
+      "imageUrl": "https://picsum.photos/seed/104/600/400",
+      "imageHint": "high resolution"
+    },
+    {
+      "id": "model-logo",
+      "description": "Logo generation model",
+      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "imageHint": "minimalist logo"
+    },
+    {
+      "id": "model-wan22",
+      "description": "WAN 2.2 Model",
+      "imageUrl": "https://picsum.photos/seed/106/600/400",
+      "imageHint": "neural network"
+    },
+    {
+      "id": "user-avatar",
+      "description": "User avatar placeholder",
+      "imageUrl": "https://picsum.photos/seed/107/100/100",
+      "imageHint": "profile portrait"
+    },
+    {
+      "id": "generated-image",
+      "description": "Placeholder for generated image",
+      "imageUrl": "https://picsum.photos/seed/108/512/512",
+      "imageHint": "surreal landscape"
+    }
+  ]
 }
