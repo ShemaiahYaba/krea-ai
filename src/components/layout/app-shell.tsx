@@ -5,7 +5,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen w-full flex-col">
         <AppHeader />
-        <main className="flex-1 p-4 sm:px-6 sm:py-6 md:gap-8">
+        <main className="flex-1 p-4 sm:px-12 sm:py-6 md:gap-8">
             {children}
         </main>
     </div>
