@@ -98,7 +98,7 @@ export const models: Model[] = [
   {
     id: "6",
     name: "Video Lipsync",
-    description: "Make your portraits talk.",
+    description: "Lip sync any video to any audio",
     imageUrl: "https://picsum.photos/seed/104/600/400",
     imageHint: "high resolution",
     icon: SolidMicIcon,
@@ -173,7 +173,7 @@ export const recommendations: Model[] = [
     {
         id: "6",
         name: "Video Lipsync",
-        description: "Make your portraits talk.",
+        description: "Lip sync any video to any audio",
         imageUrl: "https://picsum.photos/seed/104/600/400",
         imageHint: "high resolution",
         icon: SolidMicIcon,
