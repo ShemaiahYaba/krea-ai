@@ -79,7 +79,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
             <div className="flex items-end justify-between">
               <div>
                 <p className="text-sm font-medium">Create with</p>
-                <p className="text-xs text-white/80">{model.description}</p>
+                <p className="text-xs text-white/80 max-w-[75%] line-clamp-3">{model.description}</p>
               </div>
               <div>
                   <Button className="bg-white text-black hover:bg-neutral-200 hover:text-black border-none rounded-full">
