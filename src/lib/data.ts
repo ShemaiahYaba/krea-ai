@@ -55,7 +55,7 @@ export const models: Model[] = [
   {
     id: "1",
     name: "Image",
-    description: "Generate images from text.",
+    description: "Generate images with custom styles in Flux and Ideogram",
     imageUrl: "https://picsum.photos/seed/106/800/600",
     imageHint: "neural network",
     icon: ImageIcon,
