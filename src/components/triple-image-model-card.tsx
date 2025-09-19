@@ -38,7 +38,7 @@ export function TripleImageModelCard({ model, className }: TripleImageModelCardP
         <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
             <p className="font-extralight uppercase tracking-tighter text-xs">{model.isNew ? "New image model" : ""}</p>
             <div className="flex-grow flex items-center justify-center">
-                <CardTitle className="text-4xl font-extrabold text-center">
+                <CardTitle className="text-5xl font-extrabold text-center">
                     {model.name}
                 </CardTitle>
             </div>
