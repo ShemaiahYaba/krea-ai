@@ -9,6 +9,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { ModelCard } from "./model-card";
+import { TripleImageModelCard } from "./triple-image-model-card";
 import { Button } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -55,7 +56,11 @@ export function CarouselSection() {
         <CarouselContent className="-ml-4">
           {recommendations.map((model) => (
             <CarouselItem key={model.id} className="basis-4/5 md:basis-3/5 aspect-[16/7] pl-4">
-              <ModelCard model={model} layout="overlay" className="h-full"/>
+              {model.name === 'WAN 2.2' ? (
+                <TripleImageModelCard model={model} className="h-full" />
+              ) : (
+                <ModelCard model={model} layout="overlay" className="h-full"/>
+              )}
             </CarouselItem>
           ))}
         </CarouselContent>
