@@ -123,7 +123,7 @@ export const models: Model[] = [
 export const recommendations: Model[] = [
     {
         id: "1",
-        name: "Image",
+        name: "WAN 2.2",
         description: "Generate images from text.",
         imageUrl: "https://picsum.photos/seed/106/800/600",
         imageHint: "neural network",
