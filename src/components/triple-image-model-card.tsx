@@ -20,9 +20,9 @@ const images = [
 export function TripleImageModelCard({ model, className }: TripleImageModelCardProps) {
   return (
     <Card className={cn("overflow-hidden relative rounded-3xl bg-card", className)}>
-        <div className="absolute inset-0 flex gap-2 p-2">
+        <div className="absolute inset-0 flex">
             {images.map((image, index) => (
-                <div key={index} className="relative w-1/3 h-full rounded-2xl overflow-hidden">
+                <div key={index} className="relative w-1/3 h-full">
                     <Image
                         src={image.src}
                         alt={image.alt}
