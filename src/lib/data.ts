@@ -124,7 +124,7 @@ export const recommendations: Model[] = [
     {
         id: "1",
         name: "WAN 2.2",
-        description: "Generate images from text.",
+        description: "Generate complex images with the brand new and powerful WAN 2.2 model. Exceptional prompt adherence and ultra-realistic textures",
         imageUrl: "https://picsum.photos/seed/106/800/600",
         imageHint: "neural network",
         icon: ImageIcon,
