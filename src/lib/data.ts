@@ -107,7 +107,7 @@ export const models: Model[] = [
   {
     id: "7",
     name: "Motion Transfer",
-    description: "Animate your static images with motion.",
+    description: "Transfer motion to images and animate characters",
     imageUrl: "https://picsum.photos/seed/109/600/400",
     imageHint: "geometric patterns",
     icon: Move,
