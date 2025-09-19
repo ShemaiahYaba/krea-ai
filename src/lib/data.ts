@@ -64,7 +64,7 @@ export const models: Model[] = [
   {
     id: "2",
     name: "Video",
-    description: "Create videos from text or images.",
+    description: "Generate videos with Hailuo, Pika, Runway, Luma and more",
     imageUrl: "https://picsum.photos/seed/101/600/400",
     imageHint: "abstract tech",
     icon: Film,
