@@ -89,7 +89,7 @@ export const models: Model[] = [
   {
     id: "5",
     name: "Edit",
-    description: "Edit your images with text prompts.",
+    description: "Add objects, change style, or expand photos and generations",
     imageUrl: "https://picsum.photos/seed/105/600/400",
     imageHint: "minimalist logo",
     icon: DraftingCompassIcon,
@@ -164,7 +164,7 @@ export const recommendations: Model[] = [
     {
         id: "5",
         name: "Edit",
-        description: "Edit your images with text prompts.",
+        description: "Add objects, change style, or expand photos and generations",
         imageUrl: "https://picsum.photos/seed/105/600/400",
         imageHint: "minimalist logo",
         icon: DraftingCompassIcon,
