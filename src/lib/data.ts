@@ -116,11 +116,11 @@ export const models: Model[] = [
   {
     id: "8",
     name: "Train",
-    description: "Train your own AI models.",
+    description: "Teach Krea to replicate your style, products or characters",
     imageUrl: "https://picsum.photos/seed/110/600/400",
     imageHint: "oil painting",
     icon: BrainCircuit,
-    isNew: true,
+    isNew: false,
   },
 ];
 
