@@ -133,7 +133,7 @@ export const recommendations: Model[] = [
     {
         id: "2",
         name: "Open source",
-        description: "Create videos from text or images.",
+        description: "We're making the weights to our FLUX.1 Krea model open-source. Download and run our model weights, read the technical report, or generate with in Krea Image",
         imageUrl: "https://picsum.photos/seed/101/600/400",
         imageHint: "abstract tech",
         icon: Film,
