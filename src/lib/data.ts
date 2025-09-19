@@ -132,7 +132,7 @@ export const recommendations: Model[] = [
     },
     {
         id: "2",
-        name: "Video",
+        name: "Open source",
         description: "Create videos from text or images.",
         imageUrl: "https://picsum.photos/seed/101/600/400",
         imageHint: "abstract tech",
