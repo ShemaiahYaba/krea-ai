@@ -84,6 +84,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/103/600/400",
     imageHint: "dynamic motion",
     icon: Wand2,
+    isNew: true,
   },
   {
     id: "5",
@@ -92,6 +93,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/105/600/400",
     imageHint: "minimalist logo",
     icon: DraftingCompassIcon,
+    isNew: true,
   },
   {
     id: "6",
@@ -100,6 +102,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/104/600/400",
     imageHint: "high resolution",
     icon: SolidMicIcon,
+    isNew: true,
   },
   {
     id: "7",
@@ -108,6 +111,7 @@ export const models: Model[] = [
     imageUrl: "https://picsum.photos/seed/109/600/400",
     imageHint: "geometric patterns",
     icon: Move,
+    isNew: true,
   },
   {
     id: "8",
