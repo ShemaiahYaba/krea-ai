@@ -72,7 +72,7 @@ export const models: Model[] = [
   {
     id: "3",
     name: "Realtime",
-    description: "See your creations come to life instantly.",
+    description: "Realtime AI rendering on a canvas, Instant feedback loops",
     imageUrl: "https://picsum.photos/seed/102/600/400",
     imageHint: "futuristic city",
     icon: PictureInPicture,
