@@ -24,7 +24,7 @@ export function AppHeader() {
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 px-4 sm:px-6">
         <div className="flex items-center gap-2">
-            <Button asChild variant="ghost" className="text-lg font-bold w-10 h-10 p-0 rounded-lg bg-white/10 backdrop-blur-sm border">
+            <Button asChild variant="ghost" className="text-lg font-bold w-10 h-10 p-0 rounded-lg bg-white/10 backdrop-blur-sm">
                 <Link href="/">K</Link>
             </Button>
             <DropdownMenu>
