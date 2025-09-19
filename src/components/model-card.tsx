@@ -78,7 +78,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
               </div>
             <div className="flex items-end justify-between">
               <div>
-                <p className="text-sm font-medium">Create with</p>
+                <p className="text-sm font-medium">{model.name} Image generation</p>
                 <p className="text-xs text-white/80 max-w-[75%] line-clamp-3">{model.description}</p>
               </div>
               <div>
