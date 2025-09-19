@@ -83,7 +83,7 @@ export function ModelCard({ model, className, layout = "default" }: ModelCardPro
               </div>
               <div>
                   <Button className="bg-white text-black hover:bg-neutral-200 hover:text-black border-none rounded-full">
-                      Try "{model.name}"
+                      Try {model.name}
                   </Button>
               </div>
             </div>
