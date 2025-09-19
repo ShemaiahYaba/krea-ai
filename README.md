@@ -2,7 +2,7 @@
 
 In a world where technology and creativity are becoming increasingly intertwined, Krea AI emerges as a sanctuary for the modern artist, designer, and dreamer. This is more than just a web application; it's a digital canvas where your imagination is the only limit, brought to life by the power of artificial intelligence.
 
-## The Visionary Behind the Canvas: Shemaiah Yaba-Shiaka
+## The Visionary Behind the Canvas: [Shemaiah Yaba-Shiaka](https://meet-yabashiaka.vercel.app)
 
 Every great creation begins with a story. The story of Krea AI is inseparable from its creator, Shemaiah Yaba-Shiaka. A designer with a profound passion for both aesthetics and innovation, Shemaiah envisioned a space where the barriers to creation are lowered, and the tools of the future are accessible to all.
 
