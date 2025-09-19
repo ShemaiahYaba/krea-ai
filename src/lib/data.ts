@@ -80,7 +80,7 @@ export const models: Model[] = [
   {
     id: "4",
     name: "Enhancer",
-    description: "Upscale and refine your images with AI.",
+    description: "Upscale and enhance images and videos up to 22k",
     imageUrl: "https://picsum.photos/seed/103/600/400",
     imageHint: "dynamic motion",
     icon: Wand2,
